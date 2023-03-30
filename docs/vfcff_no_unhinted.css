@@ -1,0 +1,15 @@
+@supports (font-variation-settings:normal) {
+    @font-face{
+        font-family: 'Source Serif VF';
+        font-weight: 200 900;
+        font-style: normal;
+        font-stretch: normal;
+        src: url('fonts/SourceSerif4VF_subset_nooverlaps_unhinted.otf.woff2') format('woff2-variations');
+    }
+    @font-face{
+        font-family: 'Source Serif VF';
+        font-weight: 200 900;
+        font-style: italic;
+        font-stretch: normal;
+        src: url('fonts/SourceSerif4VF_subset_nooverlaps_unhinted.otf.woff2') format('woff2-variations');    }
+}

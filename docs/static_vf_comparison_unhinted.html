@@ -1,0 +1,61 @@
+---
+title: Source Serif 4
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <title>Source Serif 4 (CFF static vs CFF2 VF, unhinted)</title>
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="static.css">
+        <style>
+            main {
+                display: inline;
+            }
+            @font-face {
+                font-family: 'Source Serif Static';
+                font-weight: 400;
+                font-style: normal;
+                font-stretch: normal;
+                src: url('fonts/SourceSerif4_subset_unhinted-ExtraLight.woff2') format('woff2');
+            }
+            @font-face{
+                font-family: 'Source Serif VF';
+                font-weight: 200 900;
+                font-style: normal;
+                font-stretch: normal;
+                src: url('fonts/SourceSerif4VF_subset_nooverlaps_unhinted.otf.woff2') format('woff2-variations');
+            }
+            .static {
+                font-family: "Source Serif Static";
+            }
+            .vf {
+                font-family: "Source Serif VF";
+            }
+
+
+        </style>
+    </head>
+    <body class="dynamic_color">
+        <header class="dynamic_color sticky">
+            <h1><a class="dynamic_text_color" href="http://github.com/adobe-fonts/source-serif/releases/latest">
+            Source Serif 4 (CFF static vs CFF2 VF, unhinted)
+            </a>
+            </h1>
+        </header>
+        <div class="spacer">
+            &nbsp;
+        </div>
+        <main spellcheck="false" contenteditable="true">
+            <div><h1 class="ExtraLight static">
+                abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<h1></div>
+            <div><h1 class="ExtraLight vf">
+                abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<h1></div>
+        <div class="spacer">
+            &nbsp;
+        </div>
+    </body>
+</html>
