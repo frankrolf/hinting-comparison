@@ -8,7 +8,7 @@ title: Source Serif 4
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="format-detection" content="telephone=no">
-        <title>Source Serif 4 (CFF/VF comparison)</title>
+        <title>Source Serif 4 (CFF static vs CFF2 VF, hinted)</title>
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="static.css">
         <style>
@@ -20,14 +20,14 @@ title: Source Serif 4
                 font-weight: 400;
                 font-style: normal;
                 font-stretch: normal;
-                src: url('fonts/SourceSerif4-ExtraLight.woff2') format('woff2');
+                src: url('fonts/SourceSerif4_subset_hinted-ExtraLight.woff2') format('woff2');
             }
             @font-face{
                 font-family: 'Source Serif VF';
                 font-weight: 200 900;
                 font-style: normal;
                 font-stretch: normal;
-                src: url('fonts/SourceSerif4VFSubsetNoOverlaps-Roman.otf.woff2') format('woff2-variations');
+                src: url('fonts/SourceSerif4VF_subset_nooverlaps_hinted.otf.woff2') format('woff2-variations');
             }
             .static {
                 font-family: "Source Serif Static";
@@ -42,7 +42,7 @@ title: Source Serif 4
     <body class="dynamic_color">
         <header class="dynamic_color sticky">
             <h1><a class="dynamic_text_color" href="http://github.com/adobe-fonts/source-serif/releases/latest">
-            Source Serif 4 (CFF vs VF line length)
+            Source Serif 4 (CFF static vs CFF2 VF, hinted)
             </a>
             </h1>
         </header>

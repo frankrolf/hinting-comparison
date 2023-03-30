@@ -4,12 +4,12 @@
         font-weight: 200 900;
         font-style: normal;
         font-stretch: normal;
-        src: url('fonts/SourceSerif4VFSubset-Roman.otf.woff2') format('woff2-variations');
+        src: url('fonts/SourceSerif4VF_subset_overlaps_hinted.otf.woff2') format('woff2-variations');
     }
     @font-face{
         font-family: 'Source Serif VF';
         font-weight: 200 900;
         font-style: italic;
         font-stretch: normal;
-        src: url('fonts/SourceSerif4VFSubset-Roman.otf.woff2') format('woff2-variations');    }
+        src: url('fonts/SourceSerif4VF_subset_overlaps_hinted.otf.woff2') format('woff2-variations');    }
 }
