@@ -176,6 +176,10 @@ li {
     display: none;
 }
 
+.smaller {
+    font-size: 1.5rem;
+}
+
 .spacer {
     top: 0;
     left: 0;
