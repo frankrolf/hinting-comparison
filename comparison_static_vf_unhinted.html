@@ -10,14 +10,14 @@ title: Source Serif 4
         <meta name="format-detection" content="telephone=no">
         <title>CFF static vs CFF2 VF (unhinted) vs TTF vs TTF VF (unhinted)</title>
         <link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="static_cff_hinted.css">
+		<link rel="stylesheet" href="static_cff_unhinted.css">
         <style>
             main {
                 display: inline;
             }
             @font-face {
                 font-family: 'Source Serif Static CFF';
-                font-weight: 400;
+                font-weight: 200;
                 font-style: normal;
                 font-stretch: normal;
                 src: url('fonts/SourceSerif4_subset_unhinted-ExtraLight.otf.woff2') format('woff2');
@@ -28,6 +28,13 @@ title: Source Serif 4
                 font-style: normal;
                 font-stretch: normal;
                 src: url('fonts/SourceSerif4_subset_unhinted-Regular.otf.woff2') format('woff2');
+            }
+            @font-face {
+                font-family: 'Source Serif Static CFF';
+                font-weight: 700;
+                font-style: normal;
+                font-stretch: normal;
+                src: url('fonts/SourceSerif4_subset_unhinted-Bold.otf.woff2') format('woff2');
             }
             @font-face {
                 font-family: 'Source Serif Static TTF';
@@ -43,7 +50,13 @@ title: Source Serif 4
                 font-stretch: normal;
                 src: url('fonts/SourceSerif4_subset_unhinted-Regular.ttf.woff2') format('woff2');
             }
-            @font-face{
+            @font-face {
+                font-family: 'Source Serif Static TTF';
+                font-weight: 700;
+                font-style: normal;
+                font-stretch: normal;
+                src: url('fonts/SourceSerif4_subset_unhinted-Bold.ttf.woff2') format('woff2');
+            }            @font-face{
                 font-family: 'Source Serif VF CFF';
                 font-weight: 200 900;
                 font-style: normal;
@@ -101,6 +114,16 @@ title: Source Serif 4
                 Short-legged, muscular quadrupedal marsupial native to Australia<h1></div>
             <div><h1 class="Regular vf_ttf">
                 Short-legged, muscular quadrupedal marsupial native to Australia<h1></div>
+            <hr>
+            <div><h1 class="Bold static_cff">
+                Wombats are about 1 m (40 in) in length with small, stubby tails and weigh between 20 and 35 kg (44 and 77 lb).<h1></div>
+            <div><h1 class="Bold vf_cff">
+                Wombats are about 1 m (40 in) in length with small, stubby tails and weigh between 20 and 35 kg (44 and 77 lb).<h1></div>
+            <div><h1 class="Bold static_ttf">
+                Wombats are about 1 m (40 in) in length with small, stubby tails and weigh between 20 and 35 kg (44 and 77 lb).<h1></div>
+            <div><h1 class="Bold vf_ttf">
+                Wombats are about 1 m (40 in) in length with small, stubby tails and weigh between 20 and 35 kg (44 and 77 lb).<h1></div>
+
         <div class="spacer">
             &nbsp;
         </div>
