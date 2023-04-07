@@ -8,7 +8,7 @@ title: Source Serif 4
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="format-detection" content="telephone=no">
-        <title>Source Serif 4 (CFF static vs CFF2 VF, unhinted)</title>
+        <title>CFF static vs CFF2 VF (unhinted) vs TTF vs TTF VF (unhinted)</title>
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="static_cff_hinted.css">
         <style>
@@ -16,24 +16,44 @@ title: Source Serif 4
                 display: inline;
             }
             @font-face {
-                font-family: 'Source Serif Static';
+                font-family: 'Source Serif Static CFF';
                 font-weight: 400;
                 font-style: normal;
                 font-stretch: normal;
                 src: url('fonts/SourceSerif4_subset_unhinted-ExtraLight.otf.woff2') format('woff2');
             }
+            @font-face {
+                font-family: 'Source Serif Static TTF';
+                font-weight: 400;
+                font-style: normal;
+                font-stretch: normal;
+                src: url('fonts/SourceSerif4_subset_unhinted-ExtraLight.ttf.woff2') format('woff2');
+            }
             @font-face{
-                font-family: 'Source Serif VF';
+                font-family: 'Source Serif VF CFF';
                 font-weight: 200 900;
                 font-style: normal;
                 font-stretch: normal;
                 src: url('fonts/SourceSerif4VF_subset_nooverlaps_unhinted.otf.woff2') format('woff2-variations');
             }
-            .static {
-                font-family: "Source Serif Static";
+            @font-face{
+                font-family: 'Source Serif VF TTF';
+                font-weight: 200 900;
+                font-style: normal;
+                font-stretch: normal;
+                src: url('fonts/SourceSerif4VF_subset_nooverlaps_unhinted.ttf.woff2') format('woff2-variations');
             }
-            .vf {
-                font-family: "Source Serif VF";
+            .static_cff {
+                font-family: "Source Serif Static CFF";
+            }
+            .static_ttf {
+                font-family: "Source Serif Static TTF";
+            }
+            .vf_cff {
+                font-family: "Source Serif VF CFF";
+            }
+            .vf_ttf {
+                font-family: "Source Serif VF TTF";
             }
 
 
@@ -42,7 +62,7 @@ title: Source Serif 4
     <body class="dynamic_color">
         <header class="dynamic_color sticky">
             <h1><a class="dynamic_text_color" href="http://github.com/adobe-fonts/source-serif/releases/latest">
-            Source Serif 4 (CFF static vs CFF2 VF, unhinted)
+            CFF static vs CFF2 VF (unhinted) vs TTF vs TTF VF (unhinted)
             </a>
             </h1>
         </header>
@@ -50,9 +70,13 @@ title: Source Serif 4
             &nbsp;
         </div>
         <main spellcheck="false" contenteditable="true">
-            <div><h1 class="ExtraLight static">
+            <div><h1 class="ExtraLight static_cff">
                 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<h1></div>
-            <div><h1 class="ExtraLight vf">
+            <div><h1 class="ExtraLight vf_cff">
+                abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<h1></div>
+            <div><h1 class="ExtraLight static_ttf">
+                abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<h1></div>
+            <div><h1 class="ExtraLight vf_ttf">
                 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<h1></div>
         <div class="spacer">
             &nbsp;
